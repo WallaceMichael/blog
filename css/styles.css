@@ -1,0 +1,281 @@
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+}
+
+main {
+  margin-bottom: 250px;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+
+#logo {
+  position: absolute;
+  top: 20px;
+  left: 10%;
+}
+
+#logo img {
+  width: 50px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d1d1d;
+  padding: 20px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+#navbar li {
+  margin: 0 10px;
+  padding: 5px;
+}
+
+#navbar .nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 16px;
+}
+
+#navbar .nav-link:hover {
+  color: #999;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: o;
+  text-align: center;
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 40px 0;
+}
+
+footer p {
+  font-size: 20px;
+}
+
+/* HOME */
+#title-container {
+  min-width: 500px;
+  text-align: center;
+  margin-top: 30px;
+}
+.title{
+  font-size: 50px;
+  color: #1d1d1d;
+  text-align: center;
+  margin-top: 30px;
+}
+#title-container h1 {
+  font-size: 50px;
+}
+#title-container p {
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+#posts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-box:first-child {
+  min-width: 100%;
+}
+.post-box {
+  flex: 1 1 0;
+  margin-bottom: 20px;
+}
+
+.post-box:nth-child(3) {
+  margin: 0 1%;
+}
+
+.post-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.post-box .post-title {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.post-box .post-title a {
+  color: #1d1d1d;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.post-box .post-title a:hover {
+  color: #797979;
+}
+
+.post-box .post-description {
+  color: #666;
+}
+.post-box .tags-container {
+  margin-top: 15px;
+}
+.post-box .tags-container a {
+  color: #fff;
+  background-color: #1d1d1d;
+  transition: 0.5s;
+  text-decoration: none;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.post-box .tags-container a:hover {
+  color: #666;
+}
+
+/* POST */
+#post-container {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: "main aside";
+  grid-gap: 30px;
+  padding-top: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 250px;
+}
+
+#post-container #main-container {
+  grid-area: main;
+  padding-right: 20px;
+}
+
+#post-description {
+  color: #999;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+#post-container #nav-container {
+  grid-area: aside;
+  border-left: 2px solid #eee;
+  padding-left: 20px;
+}
+
+#post-container img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#post-container h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#post-container p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* --- TAGS --- */
+#post-container #tags-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+#post-container .tag-list {
+  list-style: none;
+  padding: 0;
+}
+
+#post-container .tag-list li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#post-container .tag-list a {
+  color: #fff;
+  background-color: #1d1d1d;
+  transition: 0.5s;
+  text-decoration: none;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#post-container .tag-list a:hover {
+  background-color: #eee;
+  color: #1d1d1d;
+}
+
+/*----CATEGORIAS----*/
+
+#post-container #categories-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+#post-container .categories-list {
+  list-style: none;
+  padding: 0;
+}
+
+#post-container .categories-list li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#post-container .categories-list a {
+  color: #fff;
+  background-color: #1d1d1d;
+  transition: 0.5s;
+  text-decoration: none;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#post-container .categories-list a:hover {
+  background-color: #eee;
+  color: #1d1d1d;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+  #post-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main"
+      "aside";
+  }
+
+  #post-container #nav-container {
+    margin-top: 30px;
+    border-left: none;
+    padding-left: 0;
+  }
+}
